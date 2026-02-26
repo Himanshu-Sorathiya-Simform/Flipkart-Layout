@@ -25,6 +25,8 @@ html {
 
 body {
 	color: var(--color-text-secondary);
+	background-color: var(--color-accent);
+	font-family: 'Helvetica', sans-serif;
 }
 
 h1,
@@ -63,4 +65,93 @@ button {
 	background-color: transparent;
 	cursor: pointer;
 	border: none;
+}
+
+/*@ #GENERAL-STYLES */
+.btn {
+	width: 6rem;
+	padding: 0.5rem 1rem;
+	font-weight: 600;
+	font-size: 0.875rem;
+	text-align: center;
+}
+
+.btn--primary {
+	color: var(--color-primary);
+	background-color: var(--color-secondary);
+}
+
+.btn--secondary {
+	color: var(--color-secondary);
+	background-color: var(--color-primary);
+}
+
+.btn--flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+}
+
+.icon--small {
+	height: 0.8rem;
+	width: 0.8rem;
+}
+
+.icon--medium {
+	height: 1.2rem;
+	width: 1.2rem;
+}
+
+/*@ #HEADER-STYLES */
+.header-container {
+	padding: 0.5rem 0;
+	background-color: var(--color-primary);
+}
+
+.header {
+	width: min(90vw, 100%);
+	margin: 0 auto;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 1rem;
+}
+
+.header__left {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.header__logo {
+	height: 2.5rem;
+	width: 6rem;
+}
+
+.header__search {
+	position: relative;
+}
+
+.header__search-bar {
+	padding: 0.5rem 2rem 0.5rem 1rem;
+	width: 25rem;
+	border: none;
+	outline: transparent;
+	font-size: 0.875rem;
+}
+
+.header__search-icon {
+	top: 0.35rem;
+	right: 0;
+	color: var(--color-primary);
+	transform: translateX(-50%);
+	position: absolute;
+}
+
+.header__right {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
 }

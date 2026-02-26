@@ -16,5 +16,55 @@
 		<title>Flipkart Dashboard</title>
 	</head>
 
-	<body></body>
+	<body>
+		<div class="header-container">
+			<header class="header">
+				<div class="header__left">
+					<a
+						href="/"
+						title="Flipkart Logo">
+						<svg class="header__logo">
+							<use href="./assets/logo.svg"></use>
+						</svg>
+					</a>
+
+					<div class="header__search">
+						<input
+							type="search"
+							placeholder="Search for products, brands and more ..."
+							class="header__search-bar" />
+
+						<svg class="icon--medium header__search-icon">
+							<use href="./assets/ui_icons_sprite.svg#search"></use>
+						</svg>
+					</div>
+				</div>
+
+				<div class="header__right">
+					<a class="btn btn--primary"><span>Login</span></a>
+
+					<button class="btn btn--secondary btn--flex">
+						<span>More</span>
+
+						<span>
+							<svg class="icon--small">
+								<use
+									href="./assets/ui_icons_sprite.svg#chevron-down"></use>
+							</svg>
+						</span>
+					</button>
+
+					<a class="btn btn--secondary btn--flex">
+						<span>
+							<svg class="icon--medium">
+								<use href="./assets/ui_icons_sprite.svg#cart"></use>
+							</svg>
+						</span>
+
+						<span>Cart</span>
+					</a>
+				</div>
+			</header>
+		</div>
+	</body>
 </html>
