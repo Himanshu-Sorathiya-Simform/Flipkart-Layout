@@ -3,8 +3,8 @@
 	--color-secondary: #ffffff;
 	--color-accent: #f1f3f6;
 
-	--color-text-primary: #212121;
-	--color-text-secondary: #d0d0d0;
+	--color-text-primary: #000000;
+	--color-text-secondary: #7f7f7f;
 	--color-text-discount: #419b6b;
 
 	--border-radius-small: 0.1875rem;
@@ -69,11 +69,17 @@ button {
 
 /*@ #GENERAL-STYLES */
 .btn {
-	width: 6rem;
-	padding: 0.5rem 1rem;
 	font-weight: 600;
 	font-size: 0.875rem;
 	text-align: center;
+}
+
+.btn--small {
+	padding: 0.5rem 1rem;
+}
+
+.btn--medium {
+	padding: 0.75rem 1rem;
 }
 
 .btn--primary {
@@ -106,7 +112,6 @@ button {
 .dropdown {
 	&::after {
 		content: url('./assets/chevron-down.svg');
-		margin: 0 0 0 0.25rem;
 		display: inline-block;
 		height: 0.8rem;
 		width: 0.8rem;
@@ -120,7 +125,6 @@ button {
 }
 
 .header {
-	width: min(90vw, 100%);
 	margin: 0 auto;
 
 	display: flex;
@@ -145,19 +149,20 @@ button {
 }
 
 .header__search-bar {
-	padding: 0.5rem 2rem 0.5rem 1rem;
 	width: 25rem;
+	padding: 0.5rem 2rem 0.5rem 1rem;
 	border: none;
 	outline: transparent;
 	font-size: 0.875rem;
 }
 
 .header__search-icon {
+	position: absolute;
 	top: 0.35rem;
 	right: 0;
+
 	color: var(--color-primary);
 	transform: translateX(-50%);
-	position: absolute;
 }
 
 .header__right {
@@ -184,15 +189,111 @@ button {
 }
 
 .category__link {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	color: var(--color-text-primary);
 	font-size: 0.875rem;
 	font-weight: 500;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .category__link:has(.dropdown) > span {
 	display: flex;
 	align-items: center;
+	gap: 0.25rem;
+}
+
+/*@ #MAIN-STYLES */
+.main-container {
+	padding: 1rem 2rem;
+}
+
+.main {
+	max-width: 90vw;
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+
+	& > div:first-child {
+		display: flex;
+		gap: 0.5rem;
+	}
+}
+
+.products-list__container {
+	width: 100%;
+	padding: 0.5rem 0;
+	background-color: var(--color-secondary);
+	overflow: hidden;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.products-list__header {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 0.5rem 1rem;
+
+	> h3 {
+		color: var(--color-text-primary);
+		font-size: 1.4rem;
+		font-weight: 500;
+	}
+
+	> p {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-weight: 300;
+		font-size: 0.875rem;
+	}
+
+	> button {
+		margin: 0 0 0 auto;
+		text-wrap: nowrap;
+	}
+}
+
+.products-list__label {
+	padding: 0 1rem 0.5rem;
+	font-size: 0.875rem;
+}
+
+.products__list {
+	border-top: 3px solid var(--color-accent);
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 0.5rem 1rem;
+}
+
+.product {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	align-items: center;
+	font-size: 0.875rem;
+}
+
+.product__heading {
+	color: var(--color-text-primary);
+}
+
+.product__discount {
+	color: var(--color-text-discount);
+	font-weight: 300;
+}
+
+.product__price {
+	color: var(--color-text-secondary);
+	font-weight: 300;
+}
+
+.advertisement > img {
+	height: 100%;
 }
