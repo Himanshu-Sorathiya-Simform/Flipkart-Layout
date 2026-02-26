@@ -1,0 +1,54 @@
+:root {
+}
+
+/*@ #CSS-RESETS */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font: inherit;
+}
+
+html {
+	font-size: 100%;
+}
+
+body {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+p,
+li {
+	text-wrap: pretty;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+img,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+button {
+	outline-color: transparent;
+	background-color: transparent;
+	cursor: pointer;
+	border: none;
+}
