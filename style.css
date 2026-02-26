@@ -103,6 +103,16 @@ button {
 	width: 1.2rem;
 }
 
+.dropdown {
+	&::after {
+		content: url('./assets/chevron-down.svg');
+		margin: 0 0 0 0.25rem;
+		display: inline-block;
+		height: 0.8rem;
+		width: 0.8rem;
+	}
+}
+
 /*@ #HEADER-STYLES */
 .header-container {
 	padding: 0.5rem 0;
@@ -154,4 +164,35 @@ button {
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;
+}
+
+/*@ #CATEGORIES-STYLES */
+.categories-container {
+	padding: 0.5rem 0;
+	background-color: var(--color-secondary);
+}
+
+.categories__list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 3.5rem;
+}
+
+.category__item {
+	padding: 0.25rem;
+}
+
+.category__link {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: var(--color-text-primary);
+	font-size: 0.875rem;
+	font-weight: 500;
+}
+
+.category__link:has(.dropdown) > span {
+	display: flex;
+	align-items: center;
 }
