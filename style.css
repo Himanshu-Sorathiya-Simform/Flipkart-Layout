@@ -1,4 +1,14 @@
 :root {
+	--color-primary: #2874f0;
+	--color-secondary: #ffffff;
+	--color-accent: #f1f3f6;
+
+	--color-text-primary: #212121;
+	--color-text-secondary: #d0d0d0;
+	--color-text-discount: #419b6b;
+
+	--border-radius-small: 0.1875rem;
+	--border-radius-medium: 0.375rem;
 }
 
 /*@ #CSS-RESETS */
@@ -14,6 +24,7 @@ html {
 }
 
 body {
+	color: var(--color-text-secondary);
 }
 
 h1,
@@ -22,6 +33,7 @@ h3,
 h4,
 h5,
 h6 {
+	color: var(--color-text-primary);
 	text-wrap: balance;
 }
 
