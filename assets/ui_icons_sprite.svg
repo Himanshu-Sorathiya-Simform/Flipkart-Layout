@@ -1,0 +1,29 @@
+<svg>
+	<symbol
+		id="search"
+		fill="currentColor"
+		viewBox="0 0 16 16">
+		<path
+			d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z" />
+	</symbol>
+
+	<symbol
+		id="chevron-down"
+		fill="currentColor"
+		viewBox="0 0 16 16">
+		<path
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+	</symbol>
+
+	<symbol
+		id="cart"
+		fill="currentColor"
+		viewBox="0 0 16 16">
+		<path
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+	</symbol>
+</svg>
