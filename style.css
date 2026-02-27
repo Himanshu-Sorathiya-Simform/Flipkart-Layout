@@ -118,6 +118,17 @@ button {
 	}
 }
 
+.line-clamp-1 {
+	display: -webkit-box;
+
+	line-clamp: 1;
+	-webkit-line-clamp: 1;
+	box-orient: vertical;
+	-webkit-box-orient: vertical;
+
+	overflow: hidden;
+}
+
 /*@ #HEADER-STYLES */
 .header-container {
 	padding: 0.5rem 0;
@@ -279,12 +290,13 @@ button {
 	gap: 0.5rem;
 	align-items: center;
 	font-size: 0.875rem;
-	min-width: 10rem;
+	width: 12rem;
 	text-align: center;
 }
 
 .product__heading {
 	color: var(--color-text-primary);
+	display: -webkit-box;
 }
 
 .product__discount {
