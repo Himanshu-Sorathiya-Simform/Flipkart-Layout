@@ -225,11 +225,6 @@ button {
 	}
 }
 
-.category__image {
-	height: 5rem;
-	width: 5rem;
-}
-
 .category__link:has(.dropdown) > .category__name {
 	display: flex;
 	align-items: center;
@@ -346,9 +341,13 @@ button {
 
 	transition: all 250ms;
 
-	button,
-	img {
+	button {
 		height: 100%;
+
+		img {
+			height: 100%;
+			width: 16rem;
+		}
 	}
 
 	&:hover {
