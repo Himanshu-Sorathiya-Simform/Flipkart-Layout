@@ -1,11 +1,11 @@
 :root {
-	--color-primary: #2874f0;
+	--color-primary: #0055de;
 	--color-secondary: #ffffff;
 	--color-accent: #f1f3f6;
 
 	--color-text-primary: #000000;
-	--color-text-secondary: #7f7f7f;
-	--color-text-discount: #419b6b;
+	--color-text-secondary: #595858;
+	--color-text-discount: #096333;
 
 	--border-radius-small: 0.1875rem;
 	--border-radius-medium: 0.375rem;
@@ -238,6 +238,11 @@ button {
 	}
 }
 
+.category__image {
+	width: 5rem;
+	height: 5rem;
+}
+
 .category__link:has(.dropdown) > .category__name {
 	display: flex;
 	align-items: center;
@@ -356,17 +361,13 @@ button {
 
 	transition: all 250ms;
 
-	button {
-		height: 100%;
-
-		img {
-			height: 100%;
-			width: 16rem;
-		}
-	}
-
 	&:hover {
 		transform: scale(1.05);
+	}
+
+	img {
+		width: fit-content;
+		height: 100%;
 	}
 }
 
