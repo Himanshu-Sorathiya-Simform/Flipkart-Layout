@@ -75,9 +75,12 @@ button {
 	font-size: 0.875rem;
 	text-align: center;
 
-	transition: all 250ms linear;
+	transition: transform 250ms linear;
 
-	&:hover {
+	&:is(:hover, :focus) {
+		outline: 1px solid var(--color-secondary);
+		outline-offset: 3px;
+
 		transform: scale(1.1);
 	}
 }
@@ -184,6 +187,11 @@ button {
 	border: none;
 	font-size: 0.875rem;
 	outline: transparent;
+
+	&:focus {
+		outline: 1px solid var(--color-secondary);
+		outline-offset: 3px;
+	}
 }
 
 .header__search-icon {
@@ -232,8 +240,7 @@ button {
 	flex-direction: column;
 	align-items: center;
 
-	&:hover,
-	&:focus {
+	&:is(:hover, :focus) {
 		outline: 1px solid #b7b7b7;
 	}
 }
@@ -361,7 +368,7 @@ button {
 
 	transition: all 250ms;
 
-	&:hover {
+	&:is(:hover, :focus) {
 		transform: scale(1.05);
 	}
 
