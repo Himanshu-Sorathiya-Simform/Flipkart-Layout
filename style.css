@@ -322,11 +322,11 @@ button {
 	overflow-x: auto;
 
 	display: flex;
-	align-items: center;
 	gap: 1rem;
 }
 
 .product {
+	height: 100%;
 	width: 12rem;
 	padding: 0.5rem 0;
 	font-size: 0.875rem;
@@ -340,6 +340,10 @@ button {
 	&:hover,
 	&:focus {
 		outline: 2px solid #c0c0c0;
+	}
+
+	p {
+		margin: auto 0 0 0;
 	}
 }
 
