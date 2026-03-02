@@ -44,4 +44,12 @@
 			stroke-linejoin="round"
 			d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
 	</symbol>
+
+	<symbol
+		id="hamburger"
+		viewBox="0 0 16 16">
+		<path
+			fill="currentcolor"
+			d="M15 12.5V14H1v-1.5zm0-5.25v1.5H1v-1.5zM15 2v1.5H1V2z"></path>
+	</symbol>
 </svg>

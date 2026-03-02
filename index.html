@@ -38,7 +38,7 @@
 					<div class="header__search">
 						<input
 							type="search"
-							placeholder="Search for products, brands and more ..."
+							placeholder="Search for products ..."
 							class="header__search-bar" />
 
 						<svg class="icon--medium header__search-icon">
@@ -48,11 +48,11 @@
 				</div>
 
 				<div class="header__right">
-					<button class="btn btn--small btn--primary">
+					<button class="btn btn--small btn--primary btn--login">
 						<span>Login</span>
 					</button>
 
-					<button class="btn btn--small btn--secondary btn--flex">
+					<button class="btn btn--small btn--secondary btn--flex btn--more">
 						<span>More</span>
 
 						<span>
@@ -63,7 +63,7 @@
 						</span>
 					</button>
 
-					<button class="btn btn--small btn--secondary btn--flex">
+					<button class="btn btn--small btn--secondary btn--flex btn--cart">
 						<span>
 							<svg class="icon--medium">
 								<use href="./assets/ui_icons_sprite.svg#cart"></use>
@@ -71,6 +71,12 @@
 						</span>
 
 						<span>Cart</span>
+					</button>
+
+					<button class="btn btn--small btn--hamburger hidden">
+						<svg class="icon--medium">
+							<use href="assets/ui_icons_sprite.svg#hamburger"></use>
+						</svg>
 					</button>
 				</div>
 			</header>
@@ -640,13 +646,13 @@
 						</li>
 					</ol>
 
-					<button class="btn__nav btn--left">
+					<button title="Move Left" class="btn__carousel btn__carousel--left">
 						<svg class="icon--large">
 							<use href="./assets/chevron-down.svg"></use>
 						</svg>
 					</button>
 
-					<button class="btn__nav btn--right">
+					<button title="Move Right" class="btn__carousel btn__carousel--right">
 						<svg class="icon--large">
 							<use href="./assets/chevron-down.svg"></use>
 						</svg>
