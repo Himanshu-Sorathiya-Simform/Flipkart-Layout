@@ -181,8 +181,7 @@ button {
 }
 
 .header__search-bar {
-	width: 25vw;
-	min-width: 2rem;
+	width: max(2rem, 25vw);
 	padding: 0.5rem 2rem 0.5rem 1rem;
 	border: none;
 	font-size: 0.875rem;
@@ -198,9 +197,10 @@ button {
 	position: absolute;
 	top: 0.35rem;
 	right: 0;
-	transform: translateX(-50%);
 
 	color: var(--color-primary);
+
+	transform: translateX(-50%);
 }
 
 .header__right {
@@ -220,7 +220,7 @@ button {
 }
 
 .categories__list {
-	max-width: 90vw;
+	width: min(90vw);
 	margin: 0 auto;
 
 	display: flex;
@@ -302,8 +302,8 @@ button {
 	}
 
 	> p {
-		font-weight: 300;
 		font-size: 0.875rem;
+		font-weight: 300;
 
 		display: flex;
 		align-items: center;
@@ -337,8 +337,7 @@ button {
 	align-items: center;
 	gap: 0.5rem;
 
-	&:hover,
-	&:focus {
+	&:is(:hover, :focus) {
 		outline: 2px solid #c0c0c0;
 	}
 
@@ -361,7 +360,6 @@ button {
 
 .product__heading {
 	color: var(--color-text-primary);
-	display: -webkit-box;
 }
 
 .product__discount {
@@ -392,10 +390,12 @@ button {
 .btn__carousel {
 	position: absolute;
 	top: 50%;
-	transform: translateY(-50%);
+
 	padding: 1.6rem 0;
 	background-color: var(--color-secondary);
 	box-shadow: 0 0 12px rgb(214, 214, 214);
+
+	transform: translateY(-50%);
 }
 
 .btn__carousel--left {
@@ -416,13 +416,13 @@ button {
 
 @media (max-width: 1120px) {
 	:is(.header, .main, .categories__list) {
-		max-width: 95vw;
+		width: min(95vw);
 	}
 }
 
 @media (max-width: 1024px) {
 	:is(.header, .main, .categories__list) {
-		max-width: 100vw;
+		width: min(100vw);
 	}
 }
 
@@ -441,7 +441,9 @@ button {
 
 	.btn--login,
 	.btn--more,
-	.btn--cart {
+	.btn--cart,
+	.btn__carousel,
+	.advertisement {
 		display: none;
 	}
 
@@ -477,10 +479,11 @@ button {
 	}
 
 	.product {
-		flex-direction: row;
 		width: 100%;
-		text-align: left;
 		padding: 0;
+		text-align: left;
+
+		flex-direction: row;
 	}
 
 	.product__image {
@@ -489,21 +492,14 @@ button {
 	}
 
 	.product__info {
+		height: 100%;
+
 		align-items: start;
 		justify-content: space-evenly;
-		height: 100%;
 	}
 
 	.product__heading {
 		font-size: 1.1rem;
-	}
-
-	.btn__carousel {
-		display: none;
-	}
-
-	.advertisement {
-		display: none;
 	}
 }
 
