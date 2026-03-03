@@ -87,10 +87,12 @@ button {
 }
 
 .btn--small {
+	/*  TOP/BOTTOM  LEFT/RIGHT */
 	padding: 0.5rem 1rem;
 }
 
 .btn--medium {
+	/*  TOP/BOTTOM  LEFT/RIGHT */
 	padding: 0.75rem 1rem;
 }
 
@@ -154,6 +156,7 @@ button {
 .header-container {
 	position: relative;
 
+	/*       ALL*/
 	padding: 0.5rem;
 	background-color: var(--color-primary);
 	overflow: hidden;
@@ -161,6 +164,7 @@ button {
 
 .header {
 	width: min(90%);
+	/*        LEFT/RIGHT */
 	margin: 0 auto;
 
 	display: flex;
@@ -186,6 +190,7 @@ button {
 
 .header__search-bar {
 	width: max(6.8rem, 25vw);
+	/*       TOP  RIGHT  BOTTOM  LEFT */
 	padding: 0.5rem 2rem 0.5rem 1rem;
 	border: none;
 	font-size: 0.875rem;
@@ -226,9 +231,10 @@ button {
 	top: 100%;
 	right: 0;
 
+	/*  TOP/BOTTOM  LEFT/RIGHT */
 	padding: 0.5rem 1.5rem;
-	background-color: var(--color-primary);
 	color: var(--color-secondary);
+	background-color: var(--color-primary);
 
 	transform: translateX(100%);
 	transition: transform 250ms linear;
@@ -240,12 +246,14 @@ button {
 
 /*@ #CATEGORIES-STYLES */
 .categories-container {
+	/*   TOP/BOTTOM */
 	padding: 0.5rem 0;
 	background-color: var(--color-secondary);
 }
 
 .categories__list {
 	width: min(90%);
+	/*        LEFT/RIGHT */
 	margin: 0 auto;
 
 	display: flex;
@@ -257,6 +265,7 @@ button {
 
 .category__link {
 	color: var(--color-text-primary);
+	/*       ALL  */
 	padding: 0.5rem;
 	font-size: 0.875rem;
 	font-weight: 500;
@@ -283,11 +292,13 @@ button {
 
 /*@ #MAIN-STYLES */
 .main-container {
+	/*  TOP/BOTTOM  LEFT/RIGHT */
 	padding: 1rem 2rem;
 }
 
 .main {
 	width: min(90%);
+	/*        LEFT/RIGHT */
 	margin: 0 auto;
 
 	display: flex;
@@ -304,6 +315,7 @@ button {
 	position: relative;
 
 	width: 100%;
+	/*  TOP/BOTTOM  LEFT/RIGHT */
 	padding: 0.5rem 0;
 	background-color: var(--color-secondary);
 	box-shadow: 0 0 5px rgb(214, 214, 214);
@@ -314,6 +326,7 @@ button {
 }
 
 .products-list__header {
+	/*  TOP/BOTTOM  LEFT/RIGHT */
 	padding: 0.5rem 1rem;
 
 	display: flex;
@@ -336,6 +349,7 @@ button {
 	}
 
 	> button {
+		/*            RIGHT */
 		margin: 0 0 0 auto;
 		text-wrap: nowrap;
 	}
@@ -343,6 +357,7 @@ button {
 
 .products__list {
 	border-top: 3px solid var(--color-accent);
+	/*  TOP/BOTTOM  LEFT/RIGHT */
 	padding: 0.5rem 1rem;
 	overflow-x: auto;
 
@@ -353,6 +368,7 @@ button {
 .product {
 	height: 100%;
 	width: 12rem;
+	/*   TOP/BOTTOM   */
 	padding: 0.5rem 0;
 	font-size: 0.875rem;
 	text-align: center;
@@ -367,6 +383,7 @@ button {
 	}
 
 	p {
+		/*      TOP  */
 		margin: auto 0 0 0;
 	}
 }
@@ -416,6 +433,7 @@ button {
 	position: absolute;
 	top: 50%;
 
+	/*   TOP/BOTTOM   */
 	padding: 1.6rem 0;
 	background-color: var(--color-secondary);
 	box-shadow: 0 0 12px rgb(214, 214, 214);
@@ -457,10 +475,12 @@ button {
 	}
 
 	.btn--small {
+		/*   TOP/BOTTOM  LEFT/RIGHT */
 		padding: 0.35rem 0.85rem;
 	}
 
 	.btn--medium {
+		/*  TOP/BOTTOM  LEFT/RIGHT */
 		padding: 0.6rem 0.85rem;
 	}
 
@@ -498,6 +518,7 @@ button {
 	}
 
 	.main-container {
+		/*  TOP/BOTTOM  LEFT/RIGHT */
 		padding: 0.5rem 1rem;
 	}
 
@@ -517,6 +538,7 @@ button {
 
 	.product {
 		width: 100%;
+		/*      ALL */
 		padding: 0;
 		text-align: left;
 
@@ -563,6 +585,7 @@ button {
 		}
 
 		> button {
+			/*     ALL */
 			margin: 0;
 		}
 	}
