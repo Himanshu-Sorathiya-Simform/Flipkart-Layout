@@ -73,12 +73,44 @@
 						<span>Cart</span>
 					</button>
 
-					<button
-						title="Menu"
+					<label
+						for="menu"
+						name="menu"
 						class="btn btn--small btn--hamburger hidden">
+						<input
+							type="checkbox"
+							id="menu" />
+
 						<svg class="icon--medium">
 							<use href="assets/ui_icons_sprite.svg#hamburger"></use>
 						</svg>
+					</label>
+				</div>
+
+				<div class="header__hamburger--dropdown">
+					<button class="btn btn--small btn--primary btn--login">
+						<span>Login</span>
+					</button>
+
+					<button class="btn btn--small btn--secondary btn--flex btn--more">
+						<span>More</span>
+
+						<span>
+							<svg class="icon--small">
+								<use
+									href="./assets/ui_icons_sprite.svg#chevron-down"></use>
+							</svg>
+						</span>
+					</button>
+
+					<button class="btn btn--small btn--secondary btn--flex btn--cart">
+						<span>
+							<svg class="icon--medium">
+								<use href="./assets/ui_icons_sprite.svg#cart"></use>
+							</svg>
+						</span>
+
+						<span>Cart</span>
 					</button>
 				</div>
 			</header>

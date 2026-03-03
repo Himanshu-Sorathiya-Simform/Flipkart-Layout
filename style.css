@@ -27,6 +27,7 @@ body {
 	color: var(--color-text-secondary);
 	background-color: var(--color-accent);
 	font-family: 'Helvetica', sans-serif;
+	overflow-x: hidden;
 }
 
 h1,
@@ -63,7 +64,6 @@ svg {
 button {
 	outline-color: transparent;
 	background-color: transparent;
-	cursor: pointer;
 	border: none;
 }
 
@@ -74,6 +74,7 @@ button {
 	font-weight: 600;
 	font-size: 0.875rem;
 	text-align: center;
+	cursor: pointer;
 
 	transition: transform 250ms linear;
 
@@ -151,12 +152,15 @@ button {
 
 /*@ #HEADER-STYLES */
 .header-container {
+	position: relative;
+
 	padding: 0.5rem;
 	background-color: var(--color-primary);
+	overflow: hidden;
 }
 
 .header {
-	max-width: 90vw;
+	width: min(90%);
 	margin: 0 auto;
 
 	display: flex;
@@ -172,7 +176,7 @@ button {
 }
 
 .header__logo {
-	min-width: 6rem;
+	width: max(6rem);
 	aspect-ratio: 2/1;
 }
 
@@ -181,7 +185,7 @@ button {
 }
 
 .header__search-bar {
-	width: max(2rem, 25vw);
+	width: max(6.8rem, 25vw);
 	padding: 0.5rem 2rem 0.5rem 1rem;
 	border: none;
 	font-size: 0.875rem;
@@ -211,6 +215,27 @@ button {
 
 .btn--hamburger {
 	color: var(--color-secondary);
+
+	> input {
+		display: none;
+	}
+}
+
+.header__hamburger--dropdown {
+	position: absolute;
+	top: 100%;
+	right: 0;
+
+	padding: 0.5rem 1.5rem;
+	background-color: var(--color-primary);
+	color: var(--color-secondary);
+
+	transform: translateX(100%);
+	transition: transform 250ms linear;
+
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
 }
 
 /*@ #CATEGORIES-STYLES */
@@ -220,7 +245,7 @@ button {
 }
 
 .categories__list {
-	width: min(90vw);
+	width: min(90%);
 	margin: 0 auto;
 
 	display: flex;
@@ -262,7 +287,7 @@ button {
 }
 
 .main {
-	max-width: 90vw;
+	width: min(90%);
 	margin: 0 auto;
 
 	display: flex;
@@ -416,13 +441,13 @@ button {
 
 @media (max-width: 1120px) {
 	:is(.header, .main, .categories__list) {
-		width: min(95vw);
+		width: min(95%);
 	}
 }
 
 @media (max-width: 1024px) {
 	:is(.header, .main, .categories__list) {
-		width: min(100vw);
+		width: min(100%);
 	}
 }
 
@@ -439,16 +464,28 @@ button {
 		padding: 0.6rem 0.85rem;
 	}
 
-	.btn--login,
-	.btn--more,
-	.btn--cart,
+	.header__right > :is(.btn--login, .btn--more, .btn--cart),
 	.btn__carousel,
 	.advertisement {
 		display: none;
 	}
 
+	.header-container:has(#menu:checked) {
+		overflow: visible;
+
+		.header__hamburger--dropdown {
+			transform: translateX(0);
+		}
+	}
+
 	.btn--hamburger {
 		display: inline-block;
+	}
+
+	.header__left {
+		flex-grow: 1;
+
+		justify-content: space-between;
 	}
 
 	.category__image {
