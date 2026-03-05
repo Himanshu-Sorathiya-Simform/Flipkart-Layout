@@ -1,0 +1,850 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Flipkart landing page clone" />
+
+		<link
+			rel="stylesheet"
+			href="./style.css" />
+
+		<title>Flipkart</title>
+
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="./assets/favicon.png" />
+	</head>
+
+	<body>
+		<div class="header-container">
+			<header class="header">
+				<div class="header__left">
+					<h1>
+						<a
+							href="/"
+							title="Flipkart Logo">
+							<svg class="header__logo">
+								<use href="./assets/logo.svg"></use>
+							</svg>
+						</a>
+					</h1>
+
+					<div class="header__search">
+						<input
+							type="search"
+							placeholder="Search for products ..."
+							class="header__search-bar" />
+
+						<svg class="icon--medium header__search-icon">
+							<use href="./assets/ui_icons_sprite.svg#search"></use>
+						</svg>
+					</div>
+				</div>
+
+				<div class="header__right">
+					<button class="btn btn--small btn--primary btn--login">
+						<span>Login</span>
+					</button>
+
+					<button class="btn btn--small btn--secondary btn--flex btn--more">
+						<span>More</span>
+
+						<span>
+							<svg class="icon--small">
+								<use
+									href="./assets/ui_icons_sprite.svg#chevron-down"></use>
+							</svg>
+						</span>
+					</button>
+
+					<button class="btn btn--small btn--secondary btn--flex btn--cart">
+						<span>
+							<svg class="icon--medium">
+								<use href="./assets/ui_icons_sprite.svg#cart"></use>
+							</svg>
+						</span>
+
+						<span>Cart</span>
+					</button>
+
+					<label
+						for="menu"
+						name="menu"
+						class="btn btn--small btn--hamburger hidden">
+						<input
+							type="checkbox"
+							id="menu" />
+
+						<svg class="icon--medium">
+							<use href="assets/ui_icons_sprite.svg#hamburger"></use>
+						</svg>
+					</label>
+				</div>
+
+				<div class="header__hamburger--dropdown">
+					<button class="btn btn--small btn--primary btn--login">
+						<span>Login</span>
+					</button>
+
+					<button class="btn btn--small btn--secondary btn--flex btn--more">
+						<span>More</span>
+
+						<span>
+							<svg class="icon--small">
+								<use
+									href="./assets/ui_icons_sprite.svg#chevron-down"></use>
+							</svg>
+						</span>
+					</button>
+
+					<button class="btn btn--small btn--secondary btn--flex btn--cart">
+						<span>
+							<svg class="icon--medium">
+								<use href="./assets/ui_icons_sprite.svg#cart"></use>
+							</svg>
+						</span>
+
+						<span>Cart</span>
+					</button>
+				</div>
+			</header>
+		</div>
+
+		<div class="categories-container">
+			<ul class="categories__list">
+				<li class="category__item">
+					<a
+						href="#"
+						class="category__link">
+						<img
+							src="./assets/offers.webp"
+							alt="Category"
+							width="auto"
+							height="auto"
+							class="category__image" />
+
+						<span class="category__name">Top Offers</span>
+					</a>
+				</li>
+
+				<li class="category__item">
+					<a
+						href="#"
+						class="category__link">
+						<img
+							src="./assets/grocery.webp"
+							alt="Category"
+							width="auto"
+							height="auto"
+							class="category__image" />
+
+						<span class="category__name">Grocery</span>
+					</a>
+				</li>
+
+				<li class="category__item">
+					<a
+						href="#"
+						class="category__link">
+						<img
+							src="./assets/mobiles.webp"
+							alt="Category"
+							width="auto"
+							height="auto"
+							class="category__image" />
+
+						<span class="category__name">Mobiles</span>
+					</a>
+				</li>
+
+				<li class="category__item">
+					<a
+						href="#"
+						class="category__link">
+						<img
+							src="./assets/fashion.webp"
+							alt="Category"
+							width="auto"
+							height="auto"
+							class="category__image" />
+
+						<span class="category__name dropdown">Fashion</span>
+					</a>
+				</li>
+
+				<li class="category__item">
+					<a
+						href="#"
+						class="category__link">
+						<img
+							src="./assets/electronics.webp"
+							alt="Category"
+							width="auto"
+							height="auto"
+							class="category__image" />
+
+						<span class="category__name dropdown">Electronics</span>
+					</a>
+				</li>
+
+				<li class="category__item">
+					<a
+						href="#"
+						class="category__link">
+						<img
+							src="./assets/home.webp"
+							alt="Category"
+							width="auto"
+							height="auto"
+							class="category__image" />
+
+						<span class="category__name dropdown">Home</span>
+					</a>
+				</li>
+
+				<li class="category__item">
+					<a
+						href="#"
+						class="category__link">
+						<img
+							src="./assets/appliances.webp"
+							alt="Category"
+							width="auto"
+							height="auto"
+							class="category__image" />
+
+						<span class="category__name dropdown">Appliance</span>
+					</a>
+				</li>
+
+				<li class="category__item">
+					<a
+						href="#"
+						class="category__link">
+						<img
+							src="./assets/travel.webp"
+							alt="Category"
+							width="auto"
+							height="auto"
+							class="category__image" />
+
+						<span class="category__name">Travel</span>
+					</a>
+				</li>
+
+				<li class="category__item">
+					<a
+						href="#"
+						class="category__link">
+						<img
+							src="./assets/toys.webp"
+							alt="Category"
+							width="auto"
+							height="auto"
+							class="category__image" />
+
+						<span class="category__name dropdown">Beauty, Toys & More</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="main-container">
+			<main class="main">
+				<div class="products__row">
+					<section class="products-list__container">
+						<header class="products-list__header">
+							<h2>Deals of the Day</h2>
+
+							<p>
+								<svg class="icon--medium">
+									<use href="./assets/ui_icons_sprite.svg#clock"></use>
+								</svg>
+
+								<span> 12 : 12 : 12 left ... </span>
+							</p>
+
+							<button class="btn btn--medium btn--secondary">
+								VIEW ALL
+							</button>
+						</header>
+
+						<ol class="products__list">
+							<li>
+								<a
+									href="#"
+									class="product">
+									<img
+										src="https://picsum.photos/200.webp?random=1"
+										alt="Product"
+										height="16rem"
+										width="16rem"
+										class="product__image" />
+
+									<div class="product__info">
+										<h3 class="product__heading line-clamp-1">
+											Wireless Bluetooth Headphones with Deep Bass
+										</h3>
+										<p class="product__discount line-clamp-1">
+											Flat 70% Off + Extra 5% Cashback
+										</p>
+										<p class="product__price line-clamp-1">
+											Starting at ₹1,299
+										</p>
+									</div>
+								</a>
+							</li>
+
+							<li>
+								<a
+									href="#"
+									class="product">
+									<img
+										src="https://picsum.photos/200.webp?random=2"
+										alt="Product"
+										height="16rem"
+										width="16rem"
+										class="product__image" />
+									<div class="product__info">
+										<h3 class="product__heading line-clamp-1">
+											Men's Casual Cotton T-Shirt
+										</h3>
+										<p class="product__discount line-clamp-1">
+											Buy 2 Get 1 Free
+										</p>
+										<p class="product__price line-clamp-1">
+											From ₹499
+										</p>
+									</div>
+								</a>
+							</li>
+
+							<li>
+								<a
+									href="#"
+									class="product">
+									<img
+										src="https://picsum.photos/200.webp?random=3"
+										alt="Product"
+										height="16rem"
+										width="16rem"
+										class="product__image" />
+									<div class="product__info">
+										<h3 class="product__heading line-clamp-1">
+											Smart Watch with Heart Rate Monitor and AMOLED
+											Display
+										</h3>
+										<p class="product__discount line-clamp-1">
+											Upto 60% Off + No Cost EMI
+										</p>
+										<p class="product__price line-clamp-1">
+											Limited Time Offer
+										</p>
+									</div>
+								</a>
+							</li>
+
+							<li>
+								<a
+									href="#"
+									class="product">
+									<img
+										src="https://picsum.photos/200.webp?random=4"
+										alt="Product"
+										height="16rem"
+										width="16rem"
+										class="product__image" />
+									<div class="product__info">
+										<h3 class="product__heading line-clamp-1">
+											Kitchen Storage Containers Set of 12 Pieces
+										</h3>
+										<p class="product__discount line-clamp-1">
+											Flat 55% Off
+										</p>
+										<p class="product__price line-clamp-1">
+											Best Seller
+										</p>
+									</div>
+								</a>
+							</li>
+
+							<li>
+								<a
+									href="#"
+									class="product">
+									<img
+										src="https://picsum.photos/200.webp?random=5"
+										alt="Product"
+										height="16rem"
+										width="16rem"
+										class="product__image" />
+									<div class="product__info">
+										<h3 class="product__heading line-clamp-1">
+											Women’s Running Shoes Lightweight &
+											Comfortable for Daily Use
+										</h3>
+										<p class="product__discount line-clamp-1">
+											Extra 10% Off on Prepaid Orders
+										</p>
+										<p class="product__price line-clamp-1">
+											From ₹1,999
+										</p>
+									</div>
+								</a>
+							</li>
+
+							<li>
+								<a
+									href="#"
+									class="product">
+									<img
+										src="https://picsum.photos/200.webp?random=6"
+										alt="Product"
+										height="16rem"
+										width="16rem"
+										class="product__image" />
+									<div class="product__info">
+										<h3 class="product__heading line-clamp-1">
+											Laptop Backpack with USB Charging Port
+										</h3>
+										<p class="product__discount line-clamp-1">
+											Upto 65% Off
+										</p>
+										<p class="product__price line-clamp-1">
+											Hot Deal
+										</p>
+									</div>
+								</a>
+							</li>
+						</ol>
+					</section>
+
+					<button class="advertisement">
+						<img
+							src="./assets/advertisement.webp"
+							alt="Advertisement" />
+					</button>
+				</div>
+
+				<section class="products__row products-list__container">
+					<header class="products-list__header">
+						<h2>Books</h2>
+
+						<button class="btn btn--medium btn--secondary">VIEW ALL</button>
+					</header>
+
+					<button
+						title="Move Left"
+						class="btn__carousel btn__carousel--left">
+						<svg class="icon--large">
+							<use href="./assets/chevron-down.svg"></use>
+						</svg>
+					</button>
+
+					<ol class="products__list">
+						<li>
+							<a
+								href="#"
+								class="product">
+								<img
+									src="https://picsum.photos/200.webp?random=2"
+									alt="Product"
+									height="16rem"
+									width="16rem"
+									class="product__image" />
+
+								<div class="product__info">
+									<h3 class="product__heading line-clamp-1">
+										Wireless Bluetooth Headphones with Deep Bass
+									</h3>
+									<p class="product__discount line-clamp-1">
+										Flat 70% Off + Extra 5% Cashback
+									</p>
+									<p class="product__price line-clamp-1">
+										Starting at ₹1,299
+									</p>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="#"
+								class="product">
+								<img
+									src="https://picsum.photos/200.webp?random=4"
+									alt="Product"
+									height="16rem"
+									width="16rem"
+									class="product__image" />
+
+								<div class="product__info">
+									<h3 class="product__heading line-clamp-1">
+										Men's Casual Cotton T-Shirt
+									</h3>
+									<p class="product__discount line-clamp-1">
+										Buy 2 Get 1 Free
+									</p>
+									<p class="product__price line-clamp-1">From ₹499</p>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="#"
+								class="product">
+								<img
+									src="https://picsum.photos/200.webp?random=5"
+									alt="Product"
+									height="16rem"
+									width="16rem"
+									class="product__image" />
+
+								<div class="product__info">
+									<h3 class="product__heading line-clamp-1">
+										Smart Watch with Heart Rate Monitor and AMOLED
+										Display
+									</h3>
+									<p class="product__discount line-clamp-1">
+										Upto 60% Off + No Cost EMI
+									</p>
+									<p class="product__price line-clamp-1">
+										Limited Time Offer
+									</p>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="#"
+								class="product">
+								<img
+									src="https://picsum.photos/200.webp?random=6"
+									alt="Product"
+									height="16rem"
+									width="16rem"
+									class="product__image" />
+
+								<div class="product__info">
+									<h3 class="product__heading line-clamp-1">
+										Kitchen Storage Containers Set of 12 Pieces
+									</h3>
+									<p class="product__discount line-clamp-1">
+										Flat 55% Off
+									</p>
+									<p class="product__price line-clamp-1">Best Seller</p>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="#"
+								class="product">
+								<img
+									src="https://picsum.photos/200.webp?random=7"
+									alt="Product"
+									height="16rem"
+									width="16rem"
+									class="product__image" />
+
+								<div class="product__info">
+									<h3 class="product__heading line-clamp-1">
+										Women’s Running Shoes Lightweight & Comfortable
+										for Daily Use
+									</h3>
+									<p class="product__discount line-clamp-1">
+										Extra 10% Off on Prepaid Orders
+									</p>
+									<p class="product__price line-clamp-1">From ₹1,999</p>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="#"
+								class="product">
+								<img
+									src="https://picsum.photos/200.webp?random=8"
+									alt="Product"
+									height="16rem"
+									width="16rem"
+									class="product__image" />
+
+								<div class="product__info">
+									<h3 class="product__heading line-clamp-1">
+										Laptop Backpack with USB Charging Port
+									</h3>
+									<p class="product__discount line-clamp-1">
+										Upto 65% Off
+									</p>
+									<p class="product__price line-clamp-1">Hot Deal</p>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="#"
+								class="product">
+								<img
+									src="https://picsum.photos/200.webp?random=9"
+									alt="Product"
+									height="16rem"
+									width="16rem"
+									class="product__image" />
+
+								<div class="product__info">
+									<h3 class="product__heading line-clamp-1">
+										Organic Green Tea Bags for Detox and Immunity
+										Boost
+									</h3>
+									<p class="product__discount line-clamp-1">
+										Flat 40% Off + Free Shipping
+									</p>
+									<p class="product__price line-clamp-1">
+										Starting ₹299
+									</p>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="#"
+								class="product">
+								<img
+									src="https://picsum.photos/200.webp?random=10"
+									alt="Product"
+									height="16rem"
+									width="16rem"
+									class="product__image" />
+
+								<div class="product__info">
+									<h3 class="product__heading line-clamp-1">
+										Portable Bluetooth Speaker
+									</h3>
+									<p class="product__discount line-clamp-1">
+										Upto 75% Off
+									</p>
+									<p class="product__price line-clamp-1">
+										Deal of the Day
+									</p>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="#"
+								class="product">
+								<img
+									src="https://picsum.photos/200.webp?random=11"
+									alt="Product"
+									height="16rem"
+									width="16rem"
+									class="product__image" />
+
+								<div class="product__info">
+									<h3 class="product__heading line-clamp-1">
+										Professional Hair Dryer with Multiple Heat
+										Settings and Cool Shot
+									</h3>
+									<p class="product__discount line-clamp-1">
+										Save ₹1,200 Today
+									</p>
+									<p class="product__price line-clamp-1">Now ₹1,499</p>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="#"
+								class="product">
+								<img
+									src="https://picsum.photos/200.webp?random=12"
+									alt="Product"
+									height="16rem"
+									width="16rem"
+									class="product__image" />
+
+								<div class="product__info">
+									<h3 class="product__heading line-clamp-1">
+										Stainless Steel Water Bottle 1 Litre
+									</h3>
+									<p class="product__discount line-clamp-1">
+										Combo Offer Available
+									</p>
+									<p class="product__price line-clamp-1">From ₹349</p>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="#"
+								class="product">
+								<img
+									src="https://picsum.photos/200.webp?random=13"
+									alt="Product"
+									height="16rem"
+									width="16rem"
+									class="product__image" />
+
+								<div class="product__info">
+									<h3 class="product__heading line-clamp-1">
+										LED Study Table Lamp with Adjustable Brightness
+										Levels
+									</h3>
+									<p class="product__discount line-clamp-1">
+										Upto 50% Off + Extra 10% Bank Offer
+									</p>
+									<p class="product__price line-clamp-1">Top Rated</p>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="#"
+								class="product">
+								<img
+									src="https://picsum.photos/200.webp?random=14"
+									alt="Product"
+									height="16rem"
+									width="16rem"
+									class="product__image" />
+
+								<div class="product__info">
+									<h3 class="product__heading line-clamp-1">
+										Classic Analog Wall Clock for Living Room Decor
+									</h3>
+									<p class="product__discount line-clamp-1">
+										Flat 45% Discount
+									</p>
+									<p class="product__price line-clamp-1">From ₹799</p>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="#"
+								class="product">
+								<img
+									src="https://picsum.photos/200.webp?random=15"
+									alt="Product"
+									height="16rem"
+									width="16rem"
+									class="product__image" />
+
+								<div class="product__info">
+									<h3 class="product__heading line-clamp-1">
+										Gaming Mouse with RGB Lighting and Adjustable DPI
+									</h3>
+									<p class="product__discount line-clamp-1">
+										Upto 70% Off + Free Mouse Pad
+									</p>
+									<p class="product__price line-clamp-1">
+										Starting ₹899
+									</p>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="#"
+								class="product">
+								<img
+									src="https://picsum.photos/200.webp?random=16"
+									alt="Product"
+									height="16rem"
+									width="16rem"
+									class="product__image" />
+
+								<div class="product__info">
+									<h3 class="product__heading line-clamp-1">
+										Comfortable Office Chair with Lumbar Support
+									</h3>
+									<p class="product__discount line-clamp-1">
+										Special Weekend Sale
+									</p>
+									<p class="product__price line-clamp-1">Now ₹4,999</p>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="#"
+								class="product">
+								<img
+									src="https://picsum.photos/200.webp?random=17"
+									alt="Product"
+									height="16rem"
+									width="16rem"
+									class="product__image" />
+
+								<div class="product__info">
+									<h3 class="product__heading line-clamp-1">
+										Non-Stick Cookware Set for Modern Kitchens
+									</h3>
+									<p class="product__discount line-clamp-1">
+										Extra 15% Off on App Orders
+									</p>
+									<p class="product__price line-clamp-1">
+										Best Value Pack
+									</p>
+								</div>
+							</a>
+						</li>
+
+						<li>
+							<a
+								href="#"
+								class="product">
+								<img
+									src="https://picsum.photos/200.webp?random=18"
+									alt="Product"
+									height="16rem"
+									width="16rem"
+									class="product__image" />
+
+								<div class="product__info">
+									<h3 class="product__heading line-clamp-1">
+										Travel Trolley Bag with 360° Wheels and TSA Lock
+									</h3>
+									<p class="product__discount line-clamp-1">
+										Upto 65% Off + Free Delivery
+									</p>
+									<p class="product__price line-clamp-1">
+										Starting ₹2,499
+									</p>
+								</div>
+							</a>
+						</li>
+					</ol>
+
+					<button
+						title="Move Right"
+						class="btn__carousel btn__carousel--right">
+						<svg class="icon--large">
+							<use href="./assets/chevron-down.svg"></use>
+						</svg>
+					</button>
+				</section>
+			</main>
+		</div>
+	</body>
+</html>
